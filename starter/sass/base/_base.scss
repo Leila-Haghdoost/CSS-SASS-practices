@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+    /* universal selector - what this does is to change the box model so that the borders
+     and the paddings are no longer added to the total width or the
+      total height that we specify for a box.
+      secondly: the after and before pseudo-elements,they can get this behavior. */
+}
+
+html{
+    //this defines what 1rem is
+    font-size: 62.5%; /* 10/16 = .625  we allow the user to zoom in in a page automatically.  the really old Internet Explorers,
+    then you cannot use rems because your site will simply not work at all, */
+    /* font-size: 10px; */
+    /* 1rem = 10px */
+}
+
+body{
+    box-sizing: border-box;
+}
