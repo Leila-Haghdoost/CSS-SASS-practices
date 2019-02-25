@@ -1,0 +1,8 @@
+@mixin clearfix {
+    //sudo element after the element clear the float
+    &::after {
+        content: ""; //  keep emthy due we dont want to see this element in page 
+        display: table;
+        clear: both;
+    }
+}
